@@ -1,0 +1,11 @@
+.container-header {display: flex; border-bottom: 1px solid grey; }
+.logo-area {width: 20%; padding: 5px; display: flex; flex-direction: column; align-items: flex-end;}
+.logo-area img {width: 50%; height: 40px;}
+.nav-btns {width: 50%; display: flex; gap: 10px; padding-left: 2%;}
+.nav-btns a {display: flex; align-items: center;}
+.nav-icon {width: 74%; display: flex; align-items: center; justify-content: flex-end;}
+.fa-heart {color: #003d82; text-align: center; display: flex; align-items: center; justify-content: flex-end; margin-left: 70%;}
+.fa-heart:hover {color: #00BFFF;}
+.login-user-area {width: 25%; display: flex; align-items: center; gap: 10px; padding-left: 2%;}
+.height {border: 1px solid #003d82; height: 30px; display: flex; position: absolute; top: 10px; left: 73%;}
+

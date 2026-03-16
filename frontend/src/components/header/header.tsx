@@ -1,12 +1,25 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
+import { NavLink } from 'react-router-dom';
 
-const header = () => {
+const Header = () => {
     return (
-        <div className="test">
-            <h1>header working</h1>
+        <div className="container-header">
+            <div className="logo-area">
+                <img src="/logo.png" alt="Logo" />
+            </div>
+            <div className="nav-btns">
+                <NavLink to="/" className="nav-btn">Browse</NavLink>
+                <NavLink to="/list" className="nav-btn">Post a listing</NavLink>
+                <i className="fa-regular fa-heart"></i>
+            </div>
+            <div className="height"></div>
+            <div className="login-user-area">
+                <NavLink to="/login" className="blue-btn">Login</NavLink>
+                <NavLink to="/sign" className="blue-btn">Sign up</NavLink>
+            </div>
         </div>
     );
 };
 
-export default header;
+export default Header;

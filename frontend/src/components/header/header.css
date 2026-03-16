@@ -9,3 +9,27 @@
 .login-user-area {width: 25%; display: flex; align-items: center; gap: 10px; padding-left: 2%;}
 .height {border: 1px solid #003d82; height: 30px; display: flex; position: absolute; top: 10px; left: 73%;}
 
+@media screen and (min-width: 764px) and (max-width: 1300px) {
+    .logo-area {justify-content: center;}
+    .logo-area img {width: 70%; height: 30px;}
+    .fa-heart {margin-left: 45%;}
+    .height {border: 1px solid #003d82; height: 25px; display: flex; position: absolute; top: 6px; left: 73%;}
+}
+
+@media screen and (min-width: 680px) and (max-width: 763px) {
+    .logo-area {width: 30%; justify-content: center;}
+    .logo-area img {width: 100%; height: 30px;}
+    .nav-btns {width: 70%;}
+    .fa-heart {margin-left: 58%;}
+    .height,
+    .login-user-area {display: none;}
+}
+
+@media screen and (max-width: 679px) {
+    .logo-area {width: 30%; justify-content: center;}
+    .logo-area img {width: 100%; height: 30px;}
+    .nav-btns {width: 70%;}
+    .fa-heart {margin-left: 20%;}
+    .height,
+    .login-user-area {display: none;}
+}

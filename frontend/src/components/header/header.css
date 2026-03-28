@@ -1,14 +1,15 @@
-.container-header {display: flex; border-bottom: 1px solid grey; }
-.logo-area {width: 20%; padding: 5px; display: flex; flex-direction: column; align-items: flex-end;}
-.logo-area img {width: 50%; height: 30px;}
-.nav-btns {width: 50%; display: flex; gap: 10px; padding-left: 2%;}
-.nav-btns a {display: flex; align-items: center;}
-.nav-icon {width: 74%; display: flex; align-items: center; justify-content: flex-end;}
-.fa-heart {color: #003d82; text-align: center; display: flex; align-items: center; justify-content: flex-end; margin-left: 70%;}
-.fa-heart:hover {color: #00BFFF;}
+.container-header {display: flex; border-bottom: 1px solid grey; height: 50px;}
+.logo-area {width: 20%; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;}
+.logo-area img {width: 50%; height: 30px; cursor: pointer;}
+.nav-btns {width: 51%; display: flex; gap: 10px;}
+.nav-btns a {display: flex; align-items: center; margin-top: 10px;}
+.btns {display: flex; width: 76%; padding-left: 10%; gap: 10px;}
+.icons {display: flex; justify-content: flex-end; width: 10%; margin-top: 10px;}
+.fa-regular {color: #003d82; text-align: center; display: flex; align-items: center; justify-content: flex-end; font-size: 18px;}
+.fa-regular:hover {color: #006699;}
 .login-user-area {width: 25%; display: flex; align-items: center; gap: 10px; padding-left: 2%;}
-.height {border: 1px solid #003d82; height: 30px; display: flex; position: absolute; top: 4px; left: 73%;}
-
+.height {border: 1px solid #003d82; height: 35px; display: flex; position: absolute; top: 10px; left: 71%;}
+.login-user-area .blue-btn {gap: 10px; display: flex; align-items: center; margin-top: 10px;}
 @media screen and (min-width: 764px) and (max-width: 1300px) {
     .logo-area {justify-content: center;}
     .logo-area img {width: 70%; height: 30px;}

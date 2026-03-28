@@ -3,20 +3,32 @@ import "./Header.css";
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+
     return (
         <div className="container-header">
             <div className="logo-area">
-                <img src="/logo_word.png" alt="Logo" />
+                <img src="/logo_word.png" alt="Logo" onClick={() => window.location.href = "/"} />
             </div>
             <div className="nav-btns">
-                <NavLink to="/" className="nav-btn">Browse</NavLink>
-                <NavLink to="/list" className="nav-btn">Post a listing</NavLink>
-                <i className="fa-regular fa-heart"></i>
+                <div className="btns">
+                    <NavLink to="/" className="nav-btn">Browse</NavLink>
+                    <NavLink to="/" className="nav-btn">New</NavLink>
+                    <NavLink to="/" className="nav-btn">Electric</NavLink>
+                    <NavLink to="/" className="nav-btn">Advices</NavLink>
+                    <NavLink to="/list" className="nav-btn">Contact</NavLink>
+                </div>
+                <div className="icons" >
+                    <i className="fa-regular fa-heart"></i>
+                    <i className="fa-regular fa-user"></i>
+                </div>
+                
             </div>
             <div className="height"></div>
             <div className="login-user-area">
-                <NavLink to="/login" className="blue-btn">Login</NavLink>
-                <NavLink to="/sign" className="blue-btn">Sign up</NavLink>
+                <NavLink to="/login" className="blue-btn">
+                    <i className="fa-solid fa-plus"></i>
+                    Post a listing
+                </NavLink>
             </div>
         </div>
     );

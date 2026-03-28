@@ -13,6 +13,18 @@
 .social {width: 5%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;}
 .credits {width: 100%; text-align: center;}
 
-@media screen and (min-width: 612px) and (max-width: 800px) {
-
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    .logo-desc {width: 25%;}
+    .logo-desc img {width: 70%; height: 45px; cursor: pointer;}
+    .p-style {font-size: 16px;}
+}
+@media (max-width: 650px) {
+    * {margin: 0; padding: 0;}
+    .footer_container {width: 100%; overflow-x: hidden; padding: 0; margin: 0;}
+    
+    .footer_content {width: 100%; display: flex; flex-direction: column; align-items: center;}
+    .logo-desc {width: 90%; display: flex; gap: 10px; align-items: center;}
+    .logo-desc img {width: 20%; height: 20px; cursor: pointer;}
+    .p-style {font-size: 15px;}
+    .social {width: 20%; display: flex; flex-direction: row;}
 }

@@ -10,27 +10,59 @@
 .login-user-area {width: 25%; display: flex; align-items: center; gap: 10px; padding-left: 2%;}
 .height {border: 1px solid #003d82; height: 35px; display: flex; position: absolute; top: 10px; left: 71%;}
 .login-user-area .blue-btn {gap: 10px; display: flex; align-items: center; margin-top: 10px;}
-@media screen and (min-width: 764px) and (max-width: 1300px) {
-    .logo-area {justify-content: center;}
-    .logo-area img {width: 70%; height: 30px;}
-    .fa-heart {margin-left: 45%;}
-    .height {border: 1px solid #003d82; height: 25px; display: flex; position: absolute; top: 6px; left: 73%;}
+@media screen and (min-width: 1160px) and (max-width: 1300px) {
+    .nav-btns {width: 60%;}
+    .login-user-area {width: 20%;}
+    .height {left: 78%;}
 }
 
-@media screen and (min-width: 680px) and (max-width: 763px) {
-    .logo-area {width: 30%; justify-content: center;}
-    .logo-area img {width: 100%; height: 30px;}
-    .nav-btns {width: 70%;}
-    .fa-heart {margin-left: 58%;}
-    .height,
-    .login-user-area {display: none;}
+@media screen and (min-width: 1045px) and (max-width: 1159px) {
+    .logo-area img {width: 50%; height: 28px;}
+    .nav-btns {width: 64%;}
+    .nav-btns a {font-size: 15px;}
+    .login-user-area {width: 18%;}
+    .height {left: 81%;}
 }
 
-@media screen and (max-width: 679px) {
-    .logo-area {width: 30%; justify-content: center;}
+@media screen and (min-width: 915px) and (max-width: 1045px) {
+    .logo-area {width: 10%;}
     .logo-area img {width: 100%; height: 30px;}
     .nav-btns {width: 70%;}
-    .fa-heart {margin-left: 20%;}
-    .height,
-    .login-user-area {display: none;}
+    .nav-btns a {font-size: 15px;}
+    .login-user-area {width: 18%;}
+    .height {left: 80%;}
+}
+
+.hamburger {display: none; cursor: pointer; font-size: 24px; background: none; border: none; position: absolute; top: 18px; left: 95%; color: #003d82;}
+.mobile-menu {display: none;}
+@media screen and (min-width: 612px) and (max-width: 914px) {
+    .btns, .login-user-area, .height {display: none;}
+    .logo-area img {width: 60%;}
+    .nav-btns {width: 75%; display: flex; justify-content: flex-end;}
+    .icons {display: flex; justify-content: flex-end; width: 10%; margin-top: 10px; margin-right: 10px;}
+    .hamburger {display: flex;}
+    .mobile-menu {position: absolute; top: 50px; left: 0; right: 0; background: white; padding: 20px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 100;}
+    .mobile-btns {display: flex; flex-direction: column; gap: 10px;}
+    .blue-btn {width: 20%;}
+}
+@media screen and (min-width: 420px) and (max-width: 611px) {
+    .btns, .login-user-area, .height {display: none;}
+    .logo-area img {width: 60%;}
+    .nav-btns {width: 75%; display: flex; justify-content: flex-end;}
+    .icons {display: flex; justify-content: flex-end; width: 10%; margin-top: 10px; margin-right: 10px;}
+    .hamburger {display: flex;}
+    .mobile-menu {position: absolute; top: 50px; left: 0; right: 0; background: white; padding: 20px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 100;}
+    .mobile-btns {display: flex; flex-direction: column; gap: 10px;}
+    .blue-btn {width: 30%;}
+}
+@media screen and (min-width: 100px) and (max-width: 419px) {
+    .btns, .login-user-area, .height {display: none;}
+    .logo-area {width: 20%;}
+    .logo-area img {width: 90%; height: 20px;}
+    .nav-btns {width: 75%; display: flex; justify-content: flex-end;}
+    .icons {display: flex; justify-content: flex-end; width: 10%; margin-top: 10px; margin-right: 10px;}
+    .hamburger {display: flex;}
+    .mobile-menu {position: absolute; top: 50px; left: 0; right: 0; background: white; padding: 20px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 100;}
+    .mobile-btns {display: flex; flex-direction: column; gap: 10px;}
+    .blue-btn {width: 35%;}
 }

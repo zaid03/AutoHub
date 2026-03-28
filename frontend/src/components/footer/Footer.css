@@ -1,0 +1,18 @@
+.footer_container {background-color: #1c1a1a; display: flex; flex-direction: column; align-items: center; padding-top: 10px; padding-bottom: 10px; gap: 10px;} 
+.footer_content {width: 85%; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;}
+.logo-desc {width: 30%;}
+.logo-desc img {width: 80%; height: 50px; cursor: pointer;}
+.navigation {width: 60%; display: flex; gap: 10px; justify-content: center;}
+.nav-column {display: flex; flex-direction: column; width: 30%; gap: 10px;}
+.navigation a {font-weight: 100;}
+.navigation a,
+.navigation a:hover,
+.social a,
+.social a:hover {color: #ffffff; border: none;}
+.fa-brands {font-size: 22px;}
+.social {width: 5%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;}
+.credits {width: 100%; text-align: center;}
+
+@media screen and (min-width: 612px) and (max-width: 800px) {
+
+}

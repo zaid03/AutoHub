@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer_container">
             <div className="footer_content">
                 <div className="logo-desc">
-                    <img src="/logo_word.png" alt="Logo" onClick={() => window.location.href = "/"} />
+                    <img src="/autohub_logo.png" alt="Logo" onClick={() => window.location.href = "/"} />
                     <p className="p-style"> is an online marketplace that allows users to buy, sell, and explore car listings.</p>
                 </div>
                 <div className="navigation">

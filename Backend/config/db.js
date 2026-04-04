@@ -1,11 +1,12 @@
-const mongoose = require('mongoose');
+const mysql = require('mysql2/promise');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
-    console.log('✅ MongoDB connected successfully');
+    const connection = await mysql.createConnection(process.env.MYSQL_URI);
+    console.log('✅ Mysql connected successfully');
+    return connection;
   } catch (error) {
-    console.error('❌ MongoDB connection failed:', error.message);
+    console.error('❌ Mysql connection failed:', error.message);
     process.exit(1);
   }
 };

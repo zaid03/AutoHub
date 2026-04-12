@@ -1,1 +1,13 @@
-.test {color: red;}
+.main-container {border: 1px solid white; margin-top: 10px; background-image: url('../../../public/images/bg-merc.jpg'); height: 700px;}
+.search-container {width: 35%; margin: 5%; padding: 1%; background-color: #ddd; border-radius: 10px; height: 190px;}
+.search-params {height: 100%;}
+.search-params .blue-btn {width: 100%; padding: 10px; font-size: 18px;}
+.first-row, .second-row, .third-row {display: flex; gap: 15px; margin-bottom: 15px;}
+.first-row select,
+.second-row input,
+.third-row input  {flex: 1;}
+input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+

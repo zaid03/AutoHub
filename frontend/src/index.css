@@ -17,3 +17,11 @@ body {
 .blue-btn {text-decoration: none; border: 1px solid #003d82; padding: 4px 12px; border-radius: 8px; color: #ffffff; background-color: #003d82; transition: 0.2s;}
 .blue-btn:hover {background-color: #005fa3; border-color: #005fa3;}
 /* button styles */
+/* Select and inputs styling */
+select,
+input[type="number"]  {padding: 4px 4px; border: 2px solid #999; border-radius: 8px; font-size: 14px; background-color: #ddd; cursor: pointer; transition: all 0.3s ease; font-family: inherit;}
+select:hover,
+input[type="number"]:hover {border-color: #003d82; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+select:focus,
+input[type="number"]:focus {outline: none; border-color: #005fa3;}
+/* Select and inputs styling */

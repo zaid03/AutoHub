@@ -11,7 +11,10 @@ body {
 .nav-btn {text-decoration: none; font-size: 16px; color: #555555; font-weight: 500;}
 .nav-btn:hover {color: #006699; border-bottom: 2px solid #006699;}
 .p-style {color: #ffffff; font-size: 18px;}
-.h4-style {font-size: 18px; color: #ffffff; font-weight: bold;}
+.h4-style,
+.span-style {font-size: 18px; color: #ffffff; font-weight: bold;}
+.span-style {color: #2d2d2d; font-size: 22px;}
+.title-style {color: #003d82; font-size: 25px; font-weight: 800;}
 /* text styles */
 /* button styles */
 .blue-btn {text-decoration: none; border: 1px solid #003d82; padding: 4px 12px; border-radius: 8px; color: #ffffff; background-color: #003d82; transition: 0.2s;}

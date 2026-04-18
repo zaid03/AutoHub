@@ -8,5 +8,12 @@ const getBrands = async () => {
     return brands;
 };
 
+//to select most popular brands
+const getTopBrands = async () => {
+    const connection = await connectDb();
+    const [brands] = await connection.execute("SELECT name, logo, clicks FROM brands WHERE clicks <> 0 ORDER BY clicks DESC LIMIT 3");
+    await connection.end();
+    return brands;
+};
 
-module.exports = {getBrands};
+module.exports = {getBrands, getTopBrands};

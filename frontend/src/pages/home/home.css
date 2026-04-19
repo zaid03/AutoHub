@@ -1,17 +1,43 @@
-.main-container {border: 1px solid white; margin-top: 10px; background-image: url('../../../public/images/bg-merc.jpg'); height: 700px;}
-.search-container {width: 35%; margin: 5%; padding: 1%; background-color: #ddd; border-radius: 8px; height: 190px;}
+.main-container {border: 1px solid white; margin-top: 10px; background-image: url('../../../public/images/bg-merc.jpg'); height: 700px; background-size: cover; background-position: center;}
+.search-container {width: 35%; margin: 5%; padding: 2%; background: #f5f7fa; border-radius: 12px;  height: 190px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);}
 .search-params {height: 100%;}
-.search-params .blue-btn {width: 100%; padding: 10px; font-size: 18px;}
+.search-params .blue-btn {width: 100%; padding: 12px; font-size: 16px; background: linear-gradient(135deg, #003d82 0%, #007bff 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: transform 0.2s ease, box-shadow 0.2s ease;}
+.search-params .blue-btn:hover {transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 61, 130, 0.3);}
 .first-row, .second-row, .third-row {display: flex; gap: 15px; margin-bottom: 15px;}
 .first-row select,
 .second-row input,
-.third-row input  {flex: 1;}
-input::placeholder {color: #666; opacity: 1;}
+.third-row input {flex: 1; padding: 8px 12px; border: 1px solid #ddd; background-color: white; border-radius: 6px; font-size: 14px; transition: border-color 0.2s ease;}
+.first-row select:focus,
+.second-row input:focus,
+.third-row input:focus {outline: none; border-color: #007bff; box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);}
+input::placeholder {color: #999; opacity: 1;}
 .second-container {padding: 5%;}
-.first-stat {margin-bottom: 50px;}
-.title-area {display: flex; align-items: center; margin-bottom: 20px;}
+.first-stat {margin-bottom: 60px;}
+.title-area {display: flex; align-items: center; margin-bottom: 20px; gap: 15px;}
 .title-area .fa-square {color: #003d82; font-size: 40px;}
+.title-style {font-size: 24px; font-weight: 600; color: #003d82;}
 .stat-data {display: flex; gap: 5%; flex-wrap: wrap; justify-content: center;}
-.stat {padding: 2px; display: flex; align-items: center; gap: 10px; width: 20%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.5); transition: background-color 0.2s ease; cursor: pointer;}
-.stat:hover {background-color: #f4f2f2;}
-.stat img {width: 30%;}
+.stat { padding: 15px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; width: 20%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; cursor: pointer; background: white;}
+.stat:hover {background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%); box-shadow: 0 8px 20px rgba(0, 61, 130, 0.15); transform: translateY(-4px);}
+.stat img {width: 50px; height: 50px; object-fit: contain;}
+.span-style {font-weight: 600; color: #333; font-size: 14px;}
+.stats-container {display: flex; justify-content: space-around; padding: 60px 40px; background: linear-gradient(135deg, #003d82 0%, #007bff 100%);  margin: 60px 0; border-radius: 12px; margin: 60px 5%;}
+.stat-item {text-align: center; flex: 1;}
+.stat-number {font-size: 3rem; font-weight: 700; color: white;margin-bottom: 10px;}
+.stat-label {font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); font-weight: 500;}
+.Error {color: #e74c3c; font-weight: 600;}
+@media screen and (min-width: 250px) and (max-width: 1000px) {
+    Header{border: 1px solid green !important;}
+    .stats-container {border: 1px solid magenta !important;}
+    .search-container {width: 85%; height: auto; border: 1px solid red !important;}
+    .first-row, .second-row, .third-row {flex-wrap: wrap; border: 1px solid blue;}
+}
+/* @media (max-width: 650px) {
+    * {margin: 0; padding: 0;}
+    .footer_container {width: 100%; overflow-x: hidden; padding: 20px 0; margin: 0; gap: 20px;}
+    .footer_content {width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;}
+    .logo-desc {width: 90%; display: flex; gap: 10px; align-items: center;}
+    .logo-desc img {width: 20%; height: 20px; cursor: pointer;}
+    .p-style {font-size: 15px;}
+    .social {width: 20%; display: flex; flex-direction: row;}
+} */

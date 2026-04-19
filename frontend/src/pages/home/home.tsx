@@ -162,6 +162,24 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="stats-container">
+                <div className="stat-item">
+                    <div className="stat-number">1,250</div>
+                    <div className="stat-label">Cars Listed</div>
+                </div>
+                <div className="stat-item">
+                    <div className="stat-number">45,892</div>
+                    <div className="stat-label">Searches Made</div>
+                </div>
+                <div className="stat-item">
+                    <div className="stat-number">12,500</div>
+                    <div className="stat-label">Happy Buyers</div>
+                </div>
+                <div className="stat-item">
+                    <div className="stat-number">98%</div>
+                    <div className="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
             <Footer />
         </>
     );

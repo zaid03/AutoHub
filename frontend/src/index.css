@@ -6,10 +6,9 @@ body {
 }
 
 * {margin: 0; padding: 0;}
-
 /* text styles */
-.nav-btn {text-decoration: none; font-size: 16px; color: #555555; font-weight: 500;}
-.nav-btn:hover {color: #006699; border-bottom: 2px solid #006699;}
+.nav-btn {text-decoration: none; font-size: 16px; color: #555555; font-weight: 500; transition: all 0.3s ease; position: relative; padding-bottom: 4px;}
+.nav-btn:hover {color: #006699;}
 .p-style {color: #ffffff; font-size: 18px;}
 .h4-style,
 .span-style {font-size: 18px; color: #ffffff; font-weight: bold;}
@@ -19,8 +18,8 @@ body {
 .title-style {color: #003d82; font-size: 25px; font-weight: 800;}
 /* text styles */
 /* button styles */
-.blue-btn {text-decoration: none; border: 1px solid #003d82; padding: 4px 12px; border-radius: 8px; color: #ffffff; background-color: #003d82; transition: 0.2s;}
-.blue-btn:hover {background-color: #005fa3; border-color: #005fa3;}
+.blue-btn {text-decoration: none; border: 2px solid #003d82; padding: 4px 14px; border-radius: 8px; color: #ffffff; background: linear-gradient(135deg, #003d82 0%, #007bff 100%); transition: all 0.3s ease; font-weight: 600; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 61, 130, 0.2);}
+.blue-btn:hover { background: linear-gradient(135deg, #005fa3 0%, #0094ff 100%); border-color: #005fa3; box-shadow: 0 6px 14px rgba(0, 61, 130, 0.3); transform: translateY(-2px);}
 /* button styles */
 /* Select and inputs styling */
 select,

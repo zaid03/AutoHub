@@ -56,12 +56,13 @@
     .blue-btn {width: 30%;}
 }
 @media screen and (min-width: 100px) and (max-width: 419px) {
+    .container-header {border: 1px solid red !important;}
     .btns, .login-user-area, .height {display: none;}
     .logo-area {width: 20%;}
     .logo-area img {width: 90%; height: 20px;}
-    .nav-btns {width: 75%; display: flex; justify-content: flex-end;}
-    .icons {display: flex; justify-content: flex-end; width: 10%; margin-top: 10px; margin-right: 10px;}
-    .hamburger {display: flex;}
+    .nav-btns {width: 70%; display: flex; justify-content: flex-end;}
+    .icons {display: flex; justify-content: flex-end; gap: 10px; width: 20%; margin-top: 10px; margin-right: 10px;  border: 1px solid magenta !important;}
+    .hamburger {display: flex; position: absolute; float: right; border: 1px solid magenta !important;}
     .mobile-menu {position: absolute; top: 50px; left: 0; right: 0; background: white; padding: 20px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 100;}
     .mobile-btns {display: flex; flex-direction: column; gap: 10px;}
     .blue-btn {width: 35%;}

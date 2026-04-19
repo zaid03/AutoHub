@@ -13,7 +13,9 @@ body {
 .p-style {color: #ffffff; font-size: 18px;}
 .h4-style,
 .span-style {font-size: 18px; color: #ffffff; font-weight: bold;}
-.span-style {color: #2d2d2d; font-size: 22px;}
+.span-style,
+.Error {color: #2d2d2d; font-size: 22px;}
+.Error {color: red;}
 .title-style {color: #003d82; font-size: 25px; font-weight: 800;}
 /* text styles */
 /* button styles */
